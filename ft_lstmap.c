@@ -6,7 +6,7 @@
 /*   By: pgobeil- <pgobeil-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 15:10:44 by pgobeil-          #+#    #+#             */
-/*   Updated: 2019/05/24 16:50:02 by pgobeil-         ###   ########.fr       */
+/*   Updated: 2019/05/25 04:47:39 by pgobeil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,13 @@
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list		*new;
-	t_list		*tmp;
-	t_list		*i;
+	t_list	*res;
 
-	new = f(lst);
-	if (new == NULL)
-		return (NULL);
-	lst = lst->next;
-	tmp = new;
-	while (lst != NULL)
+	if (lst)
 	{
-		i = lst->next;
-		tmp->next = f(lst);
-		if (tmp == NULL)
-			return (NULL);
-		lst = i;
+		res = f(lst);
+		res->next = ft_lstmap(lst->next, f);
+		return (res);
 	}
-	return (new);
+	return (NULL);
 }
