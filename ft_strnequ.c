@@ -6,7 +6,7 @@
 /*   By: pgobeil- <pgobeil-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 15:04:28 by pgobeil-          #+#    #+#             */
-/*   Updated: 2019/05/25 01:08:31 by pgobeil-         ###   ########.fr       */
+/*   Updated: 2019/05/25 03:08:23 by pgobeil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 	unsigned int i;
 
 	i = 0;
-
 	while (s1[i] != '\0' && s2[i] != '\0' && (i + 1) <= n)
 	{
 		if (s1[i] != s2[i])
