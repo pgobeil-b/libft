@@ -6,7 +6,7 @@
 /*   By: pgobeil- <pgobeil-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 11:32:32 by pgobeil-          #+#    #+#             */
-/*   Updated: 2019/05/24 12:20:15 by pgobeil-         ###   ########.fr       */
+/*   Updated: 2019/05/25 02:55:44 by pgobeil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 	if (content == NULL)
 	{
 		link->content = NULL;
-		link->content_size = content_size;
+		link->content_size = 0;
 	}
 	else
 	{
