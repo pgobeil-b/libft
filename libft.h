@@ -6,7 +6,7 @@
 /*   By: pgobeil- <pgobeil-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 19:58:26 by pgobeil-          #+#    #+#             */
-/*   Updated: 2019/05/24 23:39:52 by pgobeil-         ###   ########.fr       */
+/*   Updated: 2019/05/25 03:23:26 by pgobeil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strmap(char const *s, char (*f)(char));
-char				*ft_strmapi(char const *s, char (*f)(char, unsigned int));
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *haystack,
 					const char *needle, size_t len);
