@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: pgobeil- <pgobeil-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/14 18:46:15 by pgobeil-          #+#    #+#              #
-#    Updated: 2019/05/24 17:10:27 by pgobeil-         ###   ########.fr        #
+#    Updated: 2019/05/25 04:27:37 by pgobeil-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ ft_toupper.c ft_tolower.c \
 ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c \
 ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c \
 ft_strtrim.c ft_strsplit.c \
-ft_itoa.c ft_digit.c ft_countwords.c\
+ft_itoa.c ft_digit.c ft_pow.c ft_countwords.c\
 ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putallstrs.c\
 ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c\
 ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
