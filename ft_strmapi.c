@@ -6,28 +6,31 @@
 /*   By: pgobeil- <pgobeil-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 13:47:44 by pgobeil-          #+#    #+#             */
-/*   Updated: 2019/05/23 19:55:16 by pgobeil-         ###   ########.fr       */
+/*   Updated: 2019/05/25 03:28:42 by pgobeil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(char, unsigned int))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char			*res;
-	unsigned int	i;
+	char	*map;
+	size_t	i;
+	size_t	j;
 
+	j = ft_strlen((char *)s);
 	i = 0;
-	if (!(res = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1))))
-		return (NULL);
-	if (f != NULL && s != NULL)
+	map = NULL;
+	if (s && f)
 	{
-		while (s[i] != '\0')
+		if (!(map = (char *)malloc(sizeof(char) * (j + 1))))
+			return (NULL);
+		while (i < j)
 		{
-			res[i] = (char)(f(s[i], i));
+			map[i] = f(i, s[i]);
 			i++;
 		}
-		res[i] = '\0';
+		map[i] = '\0';
 	}
-	return (res);
+	return (map);
 }
